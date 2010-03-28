@@ -22,3 +22,6 @@
 [submodule "CoffeeScript.tmbundle"]
 	path = CoffeeScript.tmbundle
 	url = git://github.com/jashkenas/coffee-script-tmbundle.git
+[submodule "Greasemonkey.tmbundle"]
+	path = Greasemonkey.tmbundle
+	url = git://github.com/textmate/greasemonkey.tmbundle.git
