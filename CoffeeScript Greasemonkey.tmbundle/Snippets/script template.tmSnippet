@@ -26,7 +26,7 @@
 		if typeof unsafeWindow.jQuery == 'undefined'
 			window.setTimeout GM_wait, 100
 		else
-			$ = unsafeWindow.jQuery
+			$: unsafeWindow.jQuery
 			run_script()
 
 	GM_wait()
