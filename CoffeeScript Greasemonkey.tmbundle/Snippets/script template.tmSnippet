@@ -19,7 +19,9 @@
 	GM_JQ.type: 'text/javascript'
 
 	document.getElementsByTagName('head')[0].appendChild(GM_JQ)
-
+	
+	$: null
+	
 	GM_wait: -&gt;
 		if typeof unsafeWindow.jQuery == 'undefined'
 			window.setTimeout GM_wait, 100
