@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string># ==UserScript==
+# @name           ${1:script name}
+# @namespace      http://userscripts.com/wilkerlucio/${2:namespace}
+# @description    ${3:script description}
+# @include        $4
+# ==/UserScript==
+
+(-&gt;
+	run_script: -&gt;
+		$0
+
+	GM_JQ: document.createElement "script"
+	GM_JQ.src: 'http://code.jquery.com/jquery-1.4.2.min.js'
+	GM_JQ.type: 'text/javascript'
+
+	document.getElementsByTagName('head')[0].appendChild(GM_JQ)
+
+	GM_wait: -&gt;
+		if typeof unsafeWindow.jQuery == 'undefined'
+			window.setTimeout GM_wait, 100
+		else
+			$ = unsafeWindow.jQuery
+			run_script()
+
+	GM_wait()
+)()</string>
+	<key>name</key>
+	<string>script template</string>
+	<key>scope</key>
+	<string>source.coffee</string>
+	<key>tabTrigger</key>
+	<string>grease</string>
+	<key>uuid</key>
+	<string>99015469-1CD7-4074-90BB-ECD5D5100AC7</string>
+</dict>
+</plist>
