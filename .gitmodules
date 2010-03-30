@@ -25,3 +25,6 @@
 [submodule "Greasemonkey.tmbundle"]
 	path = Greasemonkey.tmbundle
 	url = git://github.com/textmate/greasemonkey.tmbundle.git
+[submodule "Haml.tmbundle"]
+	path = Haml.tmbundle
+	url = git://github.com/douglasjarquin/ruby-haml-tmbundle.git
