@@ -28,3 +28,6 @@
 [submodule "Haml.tmbundle"]
 	path = Haml.tmbundle
 	url = git://github.com/douglasjarquin/ruby-haml-tmbundle.git
+[submodule "Sass.tmbundle"]
+	path = Sass.tmbundle
+	url = git://github.com/aussiegeek/ruby-sass-tmbundle.git
