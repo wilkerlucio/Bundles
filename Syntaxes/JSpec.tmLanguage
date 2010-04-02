@@ -9,9 +9,9 @@
 		<string>spec</string>
 	</array>
 	<key>foldingStartMarker</key>
-	<string>\s*(before|before_each|after|describe|it)</string>
+	<string>^\s*(before|before_each|after|describe|it)</string>
 	<key>foldingStopMarker</key>
-	<string>\s*end$</string>
+	<string>^\s*end$</string>
 	<key>keyEquivalent</key>
 	<string>^~J</string>
 	<key>name</key>
@@ -20,7 +20,7 @@
 	<array>
 		<dict>
 			<key>match</key>
-			<string>\b(before|before_each|after|end)\b</string>
+			<string>^\s*(before|before_each|after|end)\b</string>
 			<key>name</key>
 			<string>keyword.other.jspec</string>
 		</dict>
