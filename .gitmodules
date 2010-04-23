@@ -31,3 +31,6 @@
 [submodule "Sass.tmbundle"]
 	path = Sass.tmbundle
 	url = git://github.com/aussiegeek/ruby-sass-tmbundle.git
+[submodule "Nginx.tmbundle"]
+	path = Nginx.tmbundle
+	url = http://github.com/johnmuhl/nginx-tmbundle.git
