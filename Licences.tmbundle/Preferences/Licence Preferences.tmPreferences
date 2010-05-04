@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Licence Preferences</string>
+	<key>settings</key>
+	<dict>
+		<key>shellVariables</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>TM_DEVELOPER_NAME</string>
+				<key>value</key>
+				<string>Wilker Lúcio</string>
+			</dict>
+		</array>
+	</dict>
+	<key>uuid</key>
+	<string>BF260BDE-DF3A-4568-990E-50B85D3CF8E7</string>
+</dict>
+</plist>
