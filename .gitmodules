@@ -34,3 +34,6 @@
 [submodule "Nginx.tmbundle"]
 	path = Nginx.tmbundle
 	url = http://github.com/johnmuhl/nginx-tmbundle.git
+[submodule "PHP Smarty.tmbundle"]
+	path = PHP Smarty.tmbundle
+	url = git://github.com/textmate/php-smarty.tmbundle.git
