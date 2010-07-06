@@ -1,3 +1,10 @@
+# RSpec TextMate Bundle
+
+## RSpec-2
+
+This bundle is not quite ready for RSpec-2 yet, but it's very close. This README
+will be updated once it is ready.
+
 ## History
 Parts of RSpec.tmbundle is based on Florian Weber's TDDMate.
 
