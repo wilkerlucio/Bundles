@@ -3,19 +3,6 @@ require File.dirname(__FILE__) + '/../../../lib/spec/mate/switch_command'
 module Spec
   module Mate
     describe SwitchCommand do
-      def twin(expected, opts={:webapp => false})
-        File.stub!(:exist?).and_return(opts[:webapp])
-
-        simple_matcher do |actual, matcher|
-          matcher.failure_message = "expected #{actual.inspect} to twin #{expected.inspect}, but it didn't"
-          matcher.negative_failure_message = "expected #{actual.inspect} not to twin #{expected.inspect}, but it did"
-          matcher.description = "treat #{expected.inspect} and #{actual.inspect} as twins"
-
-          command = SwitchCommand.new
-          command.twin(actual) == expected && command.twin(expected) == actual
-        end
-      end
-
       class << self
         def expect_twins(pair)
           specify do
@@ -24,7 +11,18 @@ module Spec
         end
       end
       
-      Spec::Matchers.define :be_a do |expected|
+      RSpec::Matchers.define :twin do |*args|
+        expected = args.shift
+        opts = args.last || {:webapp => false}
+        File.stub!(:exist?).and_return(opts[:webapp])
+
+        match do |actual|
+          command = SwitchCommand.new
+          command.twin(actual) == expected && command.twin(expected) == actual
+        end
+      end
+
+      RSpec::Matchers.define :be_a do |expected|
         match do |actual|
           SwitchCommand.new.file_type(actual) == expected
         end
@@ -79,13 +77,13 @@ EOF
         ]
       
         expect_twins [
-          "/a/full/path/app/controllers/application.rb",
+          "/a/full/path/app/controllers/application_controller.rb",
           "/a/full/path/spec/controllers/application_controller_spec.rb"
         ]
       
         expect_twins [
           "/a/full/path/spec/controllers/application_controller_spec.rb",
-          "/a/full/path/app/controllers/application.rb"
+          "/a/full/path/app/controllers/application_controller.rb"
         ]
       
         expect_twins [
