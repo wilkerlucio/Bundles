@@ -12,7 +12,7 @@ elsif ENV['TM_RSPEC_HOME']
     raise "TM_RSPEC_HOME points to a bad location: #{ENV['TM_RSPEC_HOME']}"
   end
   $LOAD_PATH.unshift(rspec_lib)
-elsif File.exist?(File.join(ENV['TM_PROJECT_DIRECTORY'], '.bundle'))
+elsif File.exist?(File.join(ENV['TM_PROJECT_DIRECTORY'], 'Gemfile'))
   require "bundler"
   Bundler.setup
 end
