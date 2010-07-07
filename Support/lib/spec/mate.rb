@@ -21,7 +21,7 @@ begin
   require 'spec/autorun'
 rescue LoadError
   require 'rspec/core'
-  ENV['DISABLE_RSPEC_AUTORUN'] = "true"
+  RSpec::Core::Runner.disable_autorun!
 end
 
 def rspec2?
