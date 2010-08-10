@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;% content_for :javascripts do %&gt;
+	&lt;script type="text/javascript"&gt;
+		$0
+	&lt;/script&gt;
+&lt;% end %&gt;</string>
+	<key>name</key>
+	<string>erb javascript</string>
+	<key>scope</key>
+	<string>text.html.ruby</string>
+	<key>tabTrigger</key>
+	<string>js</string>
+	<key>uuid</key>
+	<string>24F84E8C-9B24-4E60-8DDC-1AF9AD9E458F</string>
+</dict>
+</plist>

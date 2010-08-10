@@ -4,6 +4,13 @@
 <dict>
 	<key>name</key>
 	<string>Wilker Rails</string>
+	<key>ordering</key>
+	<array>
+		<string>0583FC68-82D9-4996-96B8-4ED1FC168292</string>
+		<string>86F14AE7-A23B-4F11-8452-480BF7418B25</string>
+		<string>C7AD6752-F4CA-47D0-9561-D2F7C49846A3</string>
+		<string>76EBCB3C-B037-4DA8-81F7-509E55405565</string>
+	</array>
 	<key>uuid</key>
 	<string>23E40F8E-BAEA-48C6-8B09-C284B8E84146</string>
 </dict>
