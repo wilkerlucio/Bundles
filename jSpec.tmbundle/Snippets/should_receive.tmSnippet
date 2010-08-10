@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>$1.should.receive(${2:method}${3:, 'once'}).with_args(${4:args}).and_return(${5:value})</string>
+	<string>$1.should.receive(${2:method}${3:, "once"}).with_args(${4:args}).and_return(${5:value})</string>
 	<key>name</key>
 	<string>should_receive</string>
 	<key>scope</key>

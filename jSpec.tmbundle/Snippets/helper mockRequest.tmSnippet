@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>mockRequest().and_return('${1:body}', '${2:text/plain}')</string>
+	<string>mockRequest().and_return("${1:body}", "${2:text/plain}")</string>
 	<key>name</key>
 	<string>helper mockRequest</string>
 	<key>scope</key>
